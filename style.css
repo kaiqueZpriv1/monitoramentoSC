@@ -1,0 +1,109 @@
+/*  import fonts de texto */
+/* principal */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap");
+/* titulo */
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@1,400;1,700&display=swap");
+/* paragrafo */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/* BODY */
+body {
+  color: #000;
+  /* background:rgb(247,247,247) ;  */
+}
+header {
+  height: 75px;
+}
+#containerHeader {
+  max-width: 1366px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/* logo */
+.logo h3 {
+  margin: 30px 20px;
+  font-size: 1.5vw;
+  font-family: "Courier";
+  color: #609ea2;
+}
+.nav-header {
+  max-width: 100%;
+}
+.nav-header nav {
+  margin: 10px 15px;
+  display: flex;
+}
+
+.ul-nav {
+  display: flex;
+  margin: 0 180px;
+}
+.list-nav {
+  margin: 20px 20px;
+}
+.list-nav a {
+  font-size: 1.5vw;
+  font-weight: 500;
+  font-family: "Raleway";
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.button-nav {
+  background-color: #2e4f4f;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 5px;
+  position: absolute;
+  right: 10px;
+}
+.button-nav a {
+  font-size: 1.7vw;
+  color: #fafafa;
+}
+
+/* main */
+.page-principal {
+  max-width: 1366px;
+  width: 100%;
+  margin: 100px 0;
+}
+.container-principal {
+  display: flex;
+}
+.text-principal {
+  width: 50%;
+  margin: 50px;
+}
+.titulo-principal {
+  color: rgba(67, 67, 67, 1);
+  font-size: 4vw;
+  font-family: "Roboto Slab", serif;
+}
+.subTitulo-principal {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  font-size: 1.5vw;
+  font-family: "Poppins";
+}
+/* image */
+.image-principal {
+  width: 50%;
+}
+.image-principal img {
+  width: 500px;
+}

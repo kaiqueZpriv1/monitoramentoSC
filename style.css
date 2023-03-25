@@ -23,11 +23,11 @@ li {
 /* BODY */
 body {
   color: #000;
-  /* background:rgb(247,247,247) ;  */
+  background: rgb(245, 245, 245);
 }
 header {
   height: 65px;
-  background-color: #2e4f4f;
+  background: rgb(245, 245, 245);
 }
 #containerHeader {
   max-width: 1366px;
@@ -40,7 +40,7 @@ header {
   margin: 20px 20px;
   font-size: 1.5vw;
   font-family: "Courier";
-  color: #7db9b6;
+  color: rgba(20, 45, 85);
 }
 .nav-header {
   max-width: 100%;
@@ -61,11 +61,46 @@ header {
   font-size: 1.5vw;
   font-weight: 500;
   font-family: "Raleway";
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(20, 45, 85, 0.4);
+  position: relative;
+}
+.list-nav a:hover {
+  color: rgba(20, 45, 85);
+}
+.list-nav a,
+.list-nav a::before,
+.list-nav a::after {
+  transition: 0.5s;
+}
+.list-nav a::before,
+.list-nav a::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+}
+.list-nav a::before {
+  opacity: 0;
+  background-color: rgba(20, 45, 85, 0.3);
+}
+.list-nav a::after {
+  transform: scaleX(0);
+  transform-origin: 0% 50%;
+  background-color: rgba(20, 45, 85, 0.6);
+}
+.list-nav a:hover::before {
+  opacity: 1;
+}
+.list-nav a:hover::after {
+  transform: scaleX(1);
 }
 
 .button-nav {
-  background-color: #0e8388;
+  background-color: rgba(20, 45, 85);
   padding: 10px 20px;
   border-radius: 10px;
   /* margin: 3px; */
@@ -82,12 +117,12 @@ header {
 .page-principal {
   max-width: 1366px;
   width: 100%;
-  margin: 100px 0;
 }
 .container-principal {
   display: flex;
 }
 .text-principal {
+  padding: 120px 0;
   width: 50%;
   margin: 50px;
 }
@@ -96,6 +131,9 @@ header {
   font-size: 4vw;
   font-family: "Roboto Slab", serif;
 }
+.titulo-principal span {
+  color: rgba(20, 45, 85);
+}
 .subTitulo-principal {
   color: rgba(0, 0, 0, 0.5);
   font-weight: 600;
@@ -103,42 +141,54 @@ header {
   font-family: "Poppins";
 }
 
-.buttons-main {
+.button-main {
+  margin: 90px 0;
   display: flex;
-  margin: 50px 125px;
 }
-.btn-denuncia,
-.btn-sobre {
-  margin: 0 15px;
-  padding: 20px 35px;
+.btn-principal {
+  padding: 20px 55px 20px 15px;
+  background-color: rgba(20, 45, 85);
   border-radius: 10px;
-  background-color: #2e4f4f;
+  border-radius: 100px;
 }
-.btn-denuncia a,
-.btn-sobre a {
-  color: #fafafa;
+.btn-principal a {
+  font-size: 1.7vw;
   font-family: "Raleway";
-  font-size: 1.2vw;
-  font-weight: 600;
-  white-space: nowrap;
+  color: #fafafa;
 }
-.btn-denuncia {
-  background-color: #fafafa;
-  border: 2px solid #2e4f4f;
+.icon-btn-principal {
+  position: relative;
 }
-.btn-denuncia a {
-  color: #2e4f4f;
+.icon-btn-principal i {
+  position: absolute;
+  left: 10px;
+  top: -15px;
+  color: #fafafa;
+  font-size: 2.5vw;
 }
-.btn-denuncia:hover,
-.btn-sobre:hover {
-  transition: transform 1s;
+
+.btn-principal:hover {
+  transition: transform 1.5s;
   transform: scale(1.1);
 }
 
-/* image */
-.image-principal {
-  width: 50%;
+.image-main {
+  margin: 0 -50px;
+  position: relative;
+  right: 10px;
+  top: 80px;
+  transform: rotate(-20deg);
 }
-.image-principal img {
-  width: 500px;
+.image-main img {
+  position: absolute;
+  animation: image 5s infinite linear;
+  width: 550px;
+}
+@keyframes image {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-15px);
+  }
 }

@@ -26,7 +26,8 @@ body {
   /* background:rgb(247,247,247) ;  */
 }
 header {
-  height: 75px;
+  height: 65px;
+  background-color: #2e4f4f;
 }
 #containerHeader {
   max-width: 1366px;
@@ -36,10 +37,10 @@ header {
 }
 /* logo */
 .logo h3 {
-  margin: 30px 20px;
+  margin: 20px 20px;
   font-size: 1.5vw;
   font-family: "Courier";
-  color: #609ea2;
+  color: #7db9b6;
 }
 .nav-header {
   max-width: 100%;
@@ -54,25 +55,26 @@ header {
   margin: 0 180px;
 }
 .list-nav {
-  margin: 20px 20px;
+  margin: 10px 20px;
 }
 .list-nav a {
   font-size: 1.5vw;
   font-weight: 500;
   font-family: "Raleway";
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .button-nav {
-  background-color: #2e4f4f;
+  background-color: #0e8388;
   padding: 10px 20px;
   border-radius: 10px;
-  margin: 5px;
+  /* margin: 3px; */
   position: absolute;
   right: 10px;
 }
 .button-nav a {
-  font-size: 1.7vw;
+  font-size: 1.6vw;
+  font-family: "Raleway";
   color: #fafafa;
 }
 
@@ -100,6 +102,39 @@ header {
   font-size: 1.5vw;
   font-family: "Poppins";
 }
+
+.buttons-main {
+  display: flex;
+  margin: 50px 125px;
+}
+.btn-denuncia,
+.btn-sobre {
+  margin: 0 15px;
+  padding: 20px 35px;
+  border-radius: 10px;
+  background-color: #2e4f4f;
+}
+.btn-denuncia a,
+.btn-sobre a {
+  color: #fafafa;
+  font-family: "Raleway";
+  font-size: 1.2vw;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.btn-denuncia {
+  background-color: #fafafa;
+  border: 2px solid #2e4f4f;
+}
+.btn-denuncia a {
+  color: #2e4f4f;
+}
+.btn-denuncia:hover,
+.btn-sobre:hover {
+  transition: transform 1s;
+  transform: scale(1.1);
+}
+
 /* image */
 .image-principal {
   width: 50%;
